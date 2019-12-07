@@ -1,0 +1,36 @@
+<resources>
+    <!-- Strings related to login -->
+
+    <string name="error_message">Error</string>
+
+
+    <string name="app_name">CookIt</string>
+    <string name="password_error">Password must have  at least 6 characters</string>
+    <string name="email_error">Invalid email</string>
+    <string name="email_hint">Enter E-mail</string>
+    <string name="password_hint">Enter password</string>
+    <string name="username_hint">Username</string>
+    <string name="register_button">Register</string>
+    <string name="username_error">Username needs to be at least 5 characters</string>
+    <string name="log_in_button">Log in</string>
+    <string name="my_profile_title">My profile</string>
+    <string name="log_out_button">Log out</string>
+    <string name="email_text">User email: %s</string>
+    <string name="username_text">Username: %s</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_create">Create</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_search">Search</string>
+    <string name="action_sign_in_short">Register</string>
+    <string name="email">Email</string>
+    <string name="auth_failed">Authentication failed, check your email and password or register</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_link_to_register">Not a member? Get registered in Firebase now!</string>
+    <string name="btn_link_to_login">Already registered. Let me login</string>
+    <string name="btn_sign_out">Logout</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+
+    <string name="title_home">Home</string>
+
+</resources>

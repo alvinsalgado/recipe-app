@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/ingredient_btn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            app:layout_constraintBottom_toTopOf="@+id/ingredientsList"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recipeTitle" />
+
+        <Button
+            android:id="@+id/direction_btn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            app:layout_constraintBottom_toTopOf="@+id/directions_list"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingredientsList" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/directions_list"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/addRecipe"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/direction_text" />
+
+        <EditText
+            android:id="@+id/direction_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Enter direction "
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toTopOf="@+id/directions_list"
+            app:layout_constraintEnd_toStartOf="@+id/direction_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingredientsList" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ingredientsList"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/direction_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingredient_text" />
+
+        <EditText
+            android:id="@+id/ingredient_text"
+            android:layout_width="307dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter ingredient "
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/ingredientsList"
+            app:layout_constraintEnd_toStartOf="@+id/ingredient_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recipeTitle" />
+
+        <EditText
+            android:id="@+id/recipeTitle"
+            android:layout_width="395dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter recipe title"
+            app:layout_constraintBottom_toTopOf="@+id/ingredient_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time" />
+
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Enter time"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toStartOf="@+id/difficulty"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_post" />
+
+        <ImageView
+            android:id="@+id/image_post"
+            android:layout_width="411dp"
+            android:layout_height="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile" />
+
+        <Button
+            android:id="@+id/addRecipe"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:text="Add Recipe"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/directions_list" />
+
+        <EditText
+            android:id="@+id/difficulty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Enter difficulty "
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/recipeTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_post"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
